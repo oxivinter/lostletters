@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Lost Letters
+## A React.js project inspired by Elden Ring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In Elden Ring, players can leave messages on the ground for other players to read. Players can rate other people's messages.
+The messages left on the ground have a strict restriction on format and a set list of available words at the player's disposal. With these restrictions, the players have managed to creatively express a variety of ideas in different situations, where the message's words have little to no meaning unless contextualized around the specific spot where the message was placed. Thus, players who have gone through dangerous areas can warn newcomers of traps, hidden passages, important items or dangerous enemies ahead.
 
-## Available Scripts
+## The Project
 
-In the project directory, you can run:
+This React project has two primary objectives:
 
-### `npm start`
+1. Allow the user to compose a message in the aforementioned fashion, adhering to the restrictions on writing messages currently found in Elden Ring. The message can be submitted along with a name for identification between users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Allow the user to retrieve messages from the non-relational database, according to the following possible options:
+2. 1. Retrieve a random message from the database
+2. 2. Retrieve a specific message from the database (by searching for its ID)
+2. 2. Retrieve a specific set of messages from the database (by searching for the author's name)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Additionally, the project has the following secondary objectives:
 
-### `npm test`
+1. Allow the user to reply to a specific message from the database, retrieving the original message along with the reply upon query.
+2. Allow the user to rate a specific message (with either a POSITIVE or NEGATIVE score), saving this interaction in the message itself along with the name of the user who rated.
+2. 1. A message cannot have more than one rating from a specific user, and if a rating is found to already exist, it must be replaced with the new one.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Eventually, an authentication system will be added to allow users to maintain a static identity and review all submitted messages or replies.
 
-### `npm run build`
+## The Reason
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This React project exists mostly as an opportunity to practice front-end development and UI design. It also provides a fun —yet hopefully non-absorbing— way of social interaction; where the cryptic nature of messages (and their subsequent replies) will make communication both challenging but quirky and entertaining.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Since the project at this point has no prospect of becoming publicly known or having a big upstream of users, there is no hurry to optimize any code, although optimization is one of the project's eventual objectives if only for the purpose of practice.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## The Stack
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project will be a single-page application running on React.js (https://reactjs.org/) on the front end.
+It will use Node.js (https://nodejs.org/en/) for all back-end operations.
+Server hosting, load balancing and caching services are not determined yet.
+Data storage and querying services will most likely implement MongoDB (https://www.mongodb.com/).
