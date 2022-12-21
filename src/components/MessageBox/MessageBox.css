@@ -1,0 +1,87 @@
+:root {
+  --text-color-primary: rgb(255, 190, 110);
+  --text-color-secondary: rgb(141, 120, 94);
+  --text-color-link: rgb(255, 217, 145);
+  --text-color-linkVisited: rgb(240, 135, 86);
+  --text-color-linkActive: rgb(255, 238, 217);
+}
+
+a {
+  color: var(--text-color-link);
+}
+
+a:hover, a:active {
+  color: var(--text-color-linkActive);
+}
+
+a:visited {
+  color: var(--text-color-linkVisited);
+}
+
+.boxContainer {
+  width: 90vw;
+  padding: 1em;
+  background: rgba(50, 10, 10, 0.8);
+}
+
+.primaryText {
+  font-size: 1.2em;
+  color: var(--text-color-primary);
+  margin: 1em 0.5em;
+  text-align: left;
+}
+
+.metaInfoRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.msgInfoLeft {
+  font-size: 0.9em;
+  color: var(--text-color-secondary);
+  text-align: left;
+}
+
+.msgInfoRight {
+  font-size: 0.9em;
+  color: var(--text-color-secondary);
+  text-align: right;
+}
+
+.actionText {
+  font-size: 1em;
+  color: var(--text-color-primary);
+  text-align: center;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  gap: 0.5em;
+}
+
+.btn { 
+  padding: 0.5em;
+  max-width: 50%;
+  background: rgb(27, 17, 5);
+  border: none;
+}
+
+.btn:hover {
+  background: rgb(51, 31, 6);
+}
+
+.noBtn {
+  border: none;
+  padding: 1em 0em 0em 1em;
+  background: none;
+  color: var(--text-color-secondary);
+}
+
+.moreRepliesBox {
+  width: 100%;
+  text-align: right;
+}
