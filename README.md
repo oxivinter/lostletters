@@ -6,6 +6,8 @@ The messages left on the ground have a strict restriction on format and a set li
 
 With these restrictions, the players have managed to creatively express a variety of ideas in different situations, where the message's words have little to no meaning unless contextualized around the specific spot where the message was placed. Thus, players who have gone through dangerous areas can warn newcomers of traps, hidden passages, important items or dangerous enemies ahead.
 
+This project will allow a similar social interaction to take place, although without the game environment and context: users will be able to compose messages with teh same restrictions, retrieve messages (at random or from a specific message ID) and interact with them either by appraising (rating as positive or negative) or replying to the message above.
+
 ## The Project
 
 This React project has two primary objectives:
