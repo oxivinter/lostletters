@@ -20,6 +20,7 @@ a:visited {
 
 .boxContainer {
   width: 90vw;
+  max-width: 40em;
   padding: 1em;
   background: rgba(50, 10, 10, 0.8);
 }

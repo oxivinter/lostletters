@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Boggart",
+    "content": "Seek grass",
+    "rating": 17
+  },
+  {
+    "id": "2",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Griggs of Vinheim",
+    "content": "Prisoner ahead",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Carian Philosopher",
+    "content": "message ahead, therefore try message",
+    "rating": 22
+  },
+  {
+    "id": "4",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Patches the Hyena",
+    "content": "Try jumping, riches ahead",
+    "rating": -3
+  },
+  {
+    "id": "5",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Lonely Merchant",
+    "content": "hurrah for message!",
+    "rating": 1
+  },
+  {
+    "id": "6",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Scout Harding",
+    "content": "shortcut ahead",
+    "rating": 156
+  },
+  {
+    "id": "7",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Vahn the Deathspeaker",
+    "content": "listen carefully, skeleton",
+    "rating": 14
+  },
+  {
+    "id": "8",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Bonfire Seeker",
+    "content": "Visions of light...",
+    "rating": 57
+  },
+  {
+    "id": "9",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Giantslayer Ohne",
+    "content": "I did it!",
+    "rating": 15
+  },
+  {
+    "id": "10",
+    "isReply": false,
+    "replyingTo": "",
+    "author": "Meditator Czet",
+    "content": "try happiness and then try silence",
+    "rating": 1
+  }
+]
